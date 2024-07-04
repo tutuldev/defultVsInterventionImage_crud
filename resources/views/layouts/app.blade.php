@@ -31,6 +31,9 @@
                 <a class="navbar-brand" href="{{ route('all.brand') }}">
                     Brand
                 </a>
+                <a class="navbar-brand" href="{{ route('all.product') }}">
+                    Product
+                </a>
                 @endguest
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

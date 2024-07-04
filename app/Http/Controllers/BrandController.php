@@ -85,18 +85,18 @@ public function update(Request $request,$id){
         'brand_image' => $last_img,
         'created_at' => Carbon::now()
     ]);
-    return redirect()->back()->with('success','Brand_image Edited');
+
     }else{
         Brand::find($id)->update([
 
             'brand_name' => $request->brand_name,
             'created_at' => Carbon::now()
         ]);
-    return redirect()->back()->with('success','Brand_image Edited');
 
     }
+    return redirect()->route('all.brand')->with('success','Brand_image Edited');
    }
-
+// Delete 
    public function Delete($id){
     $img = Brand::find($id);
     $old_img=$img->brand_image;

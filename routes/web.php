@@ -40,4 +40,13 @@ Route::get('Brand/Edit/{id}', [App\Http\Controllers\BrandController::class, 'Edi
 Route::post('Update/Brand/{id}', [App\Http\Controllers\BrandController::class, 'update']);
 Route::get('Delete/Brand/{id}', [App\Http\Controllers\BrandController::class, 'Delete']);
 
+// product
+Route::get('Product/All', [App\Http\Controllers\ProductController::class, 'AllProduct'])->name('all.product');
+Route::post('Product/Add', [App\Http\Controllers\ProductController::class, 'Addproduct'])->name('store.product');
+Route::get('Product/Edit/{id}', [App\Http\Controllers\ProductController::class, 'Edit']);
+Route::post('Update/Product/{id}', [App\Http\Controllers\ProductController::class, 'Update']);
+Route::get('Delete/Product/{id}', [App\Http\Controllers\ProductController::class, 'Delete']);
+
+
+
 
