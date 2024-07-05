@@ -34,7 +34,7 @@
                         </div>
                         <div class="mb-3">
 
-                            <img src="{{asset($products->product_image)}}" height="50px" width="80px" alt="" >
+                            <img src="{{asset('img/product/'.$products->product_image)}}" height="50px" width="80px" alt="" >
                         </div>
                         <button type="submit" class="btn btn-primary">update</button>
                       </form>

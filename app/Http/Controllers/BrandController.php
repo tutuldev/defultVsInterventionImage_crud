@@ -96,7 +96,7 @@ public function update(Request $request,$id){
     }
     return redirect()->route('all.brand')->with('success','Brand_image Edited');
    }
-// Delete 
+// Delete
    public function Delete($id){
     $img = Brand::find($id);
     $old_img=$img->brand_image;

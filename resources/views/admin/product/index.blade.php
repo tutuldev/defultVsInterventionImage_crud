@@ -15,6 +15,11 @@
                         <strong>{{session('success')}}</strong>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                       </div>
+                      @elseif(session('error'))
+                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                          <strong>{{session('error')}}</strong>
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
                       @endif
                       {{-- aleart end  --}}
                     <table class="table">
@@ -34,7 +39,7 @@
                                 <th scope="row">{{$products->firstItem()+$loop->index}}</th>
                                 <td>{{$product->product_name}}</td>
                                 <td>
-                                    <img src="{{asset($product->product_image)}}" height="50px" width="80px" alt="" >
+                                    <img src="{{asset('img/product/'.$product->product_image)}}" height="50px" width="80px" alt="" >
                                 </td>
                                 <td>
                                     @if($product->created_at == NULL)
