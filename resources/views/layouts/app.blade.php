@@ -28,6 +28,9 @@
                 <a class="navbar-brand" href="{{ route('all.category') }}">
                     Category
                 </a>
+                <a class="navbar-brand" href="{{ route('all.subcategory') }}">
+                    Sub-Category
+                </a>
                 <a class="navbar-brand" href="{{ route('all.brand') }}">
                     Brand
                 </a>
